@@ -14,3 +14,4 @@ Luma can be installed via npm:
 
 ```bash
 npm install luma-core
+
