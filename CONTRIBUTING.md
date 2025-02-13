@@ -9,5 +9,5 @@ Thank you for your interest in contributing to Luma-Core! We welcome contributio
 
 2. **Clone Your Fork:**  
    ```bash
-   git clone https://github.com/your-username/luma-core.git
+   git clone https://github.com/X-Fenster/luma-core.git
    cd luma-core
