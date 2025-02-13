@@ -7,3 +7,4 @@
 ## [1.0.5] - 2025-02-13
 - new License (MIT)
 - better package.json file
+- new Contributing.md file
