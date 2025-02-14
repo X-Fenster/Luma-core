@@ -16,6 +16,12 @@ Luma can be installed via npm:
 npm install luma-core
 ```
 
+or via cdn:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/luma-core/dist/luma-core.min.js"></script>
+```
+
 ## Usage: `defineComponent`
 
 ### Importing `defineComponent`
