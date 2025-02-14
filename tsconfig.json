@@ -6,6 +6,8 @@
     "outDir": "dist",
     "strict": true,
     "removeComments": true,
-    "sourceMap": false
+    "sourceMap": false,
+    "declaration": true,
+    "emitDeclarationOnly": true
   }
 }

@@ -1,14 +1,28 @@
 {
   "name": "luma-core",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Luma is a lighweight, modular Javascript framework designed for building modern web applications with ease. It focuses on simplicity and flexibility, providing developers with the essential tools needed to create clean, efficient, and scalable applications. With built-in features like routing and customizable UI components, Luma allows for fast development without unnecessary complexity. The framework's minimalistic design ensures that it remains lightweight while being highly extensible, giving developers the freedom to add costum functionality as needed. Whether you're building small projects or large-scale applications, Luma offers a streamlined approach to JavaScript development.",
-  "main": "luma.min.js",
+  "main": "dist/luma-core.js",
+  "module": "dist/luma-core.min.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && terser dist/luma-core.js -o dist/luma-core.min.js",
+    "esbuild": "esbuild src/index.ts --minify --format=esm --outfile=dist/luma-core.esm.js && esbuild src/index.ts --minify --format=cjs --outfile=dist/luma-core.cjs.js",
+    "test": "jest",
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/X-Fenster/Luma-core.git"
   },
   "author": "Jonathan Bartels",
-  "license": "ISC",
-  "dependencies": {
-    "luma-core": "^1.0.3"
+  "license": "MIT",
+  "keywords": [
+    "framework",
+    "webcomponents",
+    "javascript"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.25.0"
   }
 }
